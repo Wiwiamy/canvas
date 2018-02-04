@@ -1,6 +1,7 @@
 var canvas = document.getElementById("myCan");
 var ctx = canvas.getContext('2d');
 //relleno
+/*
 ctx.fillStyle = 'white';
 ctx.fillRect(100,100,100,100); //x, y, w, h
 
@@ -19,4 +20,11 @@ ctx.stroke();
 ctx.fill();
 
 
-ctx.clearRect(150,150,100,100);
+ctx.clearRect(0,0,640,480);
+*/
+ctx.moveTo(200,200);
+ctx.lineTo(200, 400);
+ctx.lineTo(400, 400);
+ctx.lineTo(400, 200);
+ctx.lineTo(200, 200);
+ctx.stroke();
