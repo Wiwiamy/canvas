@@ -3,7 +3,7 @@ var ctx = canvas.getContext('2d');
 //relleno
 ctx.fillStyle = 'white';
 ctx.fillRect(100,100,100,100); //x, y, w, h
-
+ctx.save();
 //borde
 ctx.strokeStyle = 'white';
 ctx.strokeRect(300, 300, 100, 100); //x, y, w, h
@@ -15,8 +15,11 @@ ctx.shadowOffsetY = -10;
 ctx.shadowBlur = 20;
 
 ctx.rect(200, 200, 100, 100); //x, y, w, h
+ctx.restore();
 ctx.stroke();
 ctx.fill();
+
+ctx.restore();
 
 ctx.beginPath();
 //ctx.clearRect(0,0,640,480);
